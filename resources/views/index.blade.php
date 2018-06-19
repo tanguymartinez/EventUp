@@ -6,7 +6,7 @@
    <div class="hvr-sink"><a href="#content"><img src={{ URL::asset('img/arrow.png') }} alt="arrow down" class="arrow"></a></div>
 </div>
 @endsection
-
+@include('inc.createEvent')
 @section('content')
   <div id="content">
 

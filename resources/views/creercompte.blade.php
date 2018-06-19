@@ -15,9 +15,9 @@
     <p> Email (identifiant)</p>
     <input class="inputCAEmail" type="text" name="email"><br><br>
     <p>Choisir un mot de passe</p>
-    <input class="inputMdpCA" type="password" name="mdp"><br><br>
+    <input class="inputMdpCA" type="password" name="password"><br><br>
     <p>Confirmer le moot de passe</p>
-    <input class="inputMdpCA" type="password" name="mdpconf"><br><br>
+      <input class="inputMdpCA" type="password" name="password_confirmation"><br><br>
     <p>Date de naissance</p>
     <input class="inputDateCA" type="date" name="datenaissance"><br><br>
 

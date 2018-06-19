@@ -41,4 +41,4 @@ Route::get('/creerunevent', function() {
 
 Route::post('/contact', 'MessagesController@submit');
 
-Route::post('/creercompte', 'CreateUserController@submit');
+Route::post('/creercompte', 'CreateUserController@createAccount');

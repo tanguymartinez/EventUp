@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Validator;
+ use Illuminate\Foundation\Auth\RegistersUsers;
 
 class CreateUserRequest extends FormRequest
 {
@@ -23,13 +25,14 @@ class CreateUserRequest extends FormRequest
      */
     public function rules()
     {
-        return [
+
+       return [
        'nom' => 'required',
        'prenom' => 'required',
        'email' => 'required',
-      // 'mdp' =>'requierd',
-      //  'mdpconf' => 'required',
-          //'dateNaissance' => 'requierd',
+       'password' => 'required|confirmed',
+       'password_confirmation' => 'required',
+       'datenaissance' => 'required',
         ];
     }
 }

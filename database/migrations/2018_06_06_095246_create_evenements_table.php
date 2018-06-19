@@ -20,7 +20,7 @@ class CreateEvenementsTable extends Migration
             $table->string('villeEvent');
             $table->integer('nbMaxInscrits');
             $table->date('dateEvent');
-            $abele->boolean('EvenementPayant');
+            $table->boolean('EvenementPayant');
             $table->string('lienSitedePayment');
             $table->timestamps();
         });

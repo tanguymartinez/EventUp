@@ -16,7 +16,7 @@ class CreateLieuEventsTable extends Migration
         Schema::create('lieu_events', function (Blueprint $table) {
             $table->increments('idEvent');
             $table->string('nomLieuEvent');
-            $table->integer('idVille')
+            $table->integer('idVille');
             $table->timestamps();
         });
     }

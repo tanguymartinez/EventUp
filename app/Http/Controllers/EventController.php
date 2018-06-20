@@ -37,15 +37,15 @@ class EventController extends Controller
      */
     public function store(CreateEventRequest $request)
     {
-      $event = new Event;
-      $event->TitleEventCE = $request->input('nomEvenement');
-      $event->DescriptionEventCE = $request->input('descriptionEvent');
-      $event->maxinscCE = $request->input('nbMaxInscrits');
-      $event->dateDebEventCE = $request->input('dateDeb');
-      $event->dateFinEventCE = $request->input('dateFin');
+//      $event = new Event;
+  //    $event->TitleEventCE = $request->input('nomEvenement');
+  //    $event->DescriptionEventCE = $request->input('descriptionEvent');
+    //  $event->maxinscCE = $request->input('nbMaxInscrits');
+    //  $event->dateDebEventCE = $request->input('dateDeb');
+    //  $event->dateFinEventCE = $request->input('dateFin');
     //  $event->EvenementPayant = $request->input('eventpayantCE');
       //$event->lienSitePayment= $request ->input('sitepaiementCE');
-      $event->save();
+  //    $event->save();
 
       return redirect('/home');
     }

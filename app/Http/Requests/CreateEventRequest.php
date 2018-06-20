@@ -24,11 +24,11 @@ class CreateEventRequest extends FormRequest
     public function rules()
     {
         return [
-          'nomEvenement' => 'required',
-          'descriptionEvent' => 'required',
-          'nbMaxInscrits' => 'required',
-          'dateDeb' => 'required',
-          'dateFin' => 'required',
+      //    'nomEvenement' => 'required',
+      //    'descriptionEvent' => 'required',
+      //    'nbMaxInscrits' => 'required',
+      //    'dateDeb' => 'required',
+      //    'dateFin' => 'required',
 
 
         ];

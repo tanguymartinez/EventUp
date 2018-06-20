@@ -17,9 +17,17 @@
         </li>
           <input class="inputSearch" type="text" placeholder="Search" aria-label="Search">
           <button class="btnSearch" type="submit" >Search</button>
+
+          @if(Auth::check())
+          <li>
+            <a href="{{ URL::route('user.logout') }}">DECONNEXION</a>
+          </li>
+          @else
+
           <li>
             <a href="/login">CONNEXION</a>
           </li>
+          @endif
       </ul>
     </div>
   </nav>

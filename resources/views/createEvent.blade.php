@@ -2,7 +2,7 @@
 
 @section('content')
 
-  <img class"separateur" src={{ URL::asset('img/separator.png') }}"" width="100" height="80">
+  <img class"separateur" src={{ URL::asset('img/separator.png') }} width="100" height="80">
 
 <div class="createEvent">
   <form action="/event/create" method="post">

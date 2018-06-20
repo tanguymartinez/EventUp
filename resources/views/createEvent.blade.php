@@ -12,7 +12,7 @@
 
 
      <label for="inputCETitle">Titre de l'evenement : </label>
-    <input class="inputCETitle" type="text" placeholder="Title" name="TitleEventCE" requierd><br>
+    <input class="inputCETitle" type="text" placeholder="Title" name="TitleEventCE" required><br>
 
     @if ($errors->has('TitleEventCE'))
         <span class="invalid-feedback">
@@ -42,6 +42,6 @@
      <button type="submit" class="btnConfirmationCA">
          {{ __('Valider') }}
      </button>
-  </from >
+  </form>
  </div>
 @endsection

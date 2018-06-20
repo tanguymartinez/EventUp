@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\CreateEventRequest;
+use App\Http\Requests;
+use App\Event;
 
 class EventController extends Controller
 {
@@ -23,7 +26,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        //
+        return view('createEvent');
     }
 
     /**
@@ -32,9 +35,21 @@ class EventController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateEventRequest $request)
     {
-        //
+      $event = new Event;
+      $event->nomEvenement = $request->input('TitleEventCE');
+      $event->descriptionEvent = $request->input('DescriptionEventCE');
+      $event->nbMaxInscrits = $request->input('maxinscCE');
+      $event->dateNaissance = $request->input('datenaissance');
+      $event->dateDeb = $request->input('dateDebEventCE');
+      $event->dateFin = $request->input('dateFinEventCE');
+    //  $event->EvenementPayant = $request->input('eventpayantCE');
+      $event->lienSitePayment= $request ->input('sitepaiementCE');
+
+      $event->save();
+
+      return redirect('/home');
     }
 
     /**

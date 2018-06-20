@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('home');
 });
 
 Route::get('/calendrier', function () {
@@ -46,3 +46,5 @@ Route::post('/creercompte', 'CreateUserController@createAccount');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('event', 'EventController');

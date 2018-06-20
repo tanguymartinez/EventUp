@@ -26,9 +26,9 @@
     <hr class="separate">
 
     <div class="icon">
-      <img class="logoMedia" src="img/facebook.png">
-      <img class="logoMedia" src="img/twitter.png">
-      <img class="logoMedia" src="img/instagram.png">
+      <img class="logoMedia" src={{ URL::asset('img/facebook.png') }}>
+      <img class="logoMedia" src={{ URL::asset('img/twitter.png') }}>
+      <img class="logoMedia" src={{ URL::asset('img/instagram.png') }}>
     </div>
 
 

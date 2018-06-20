@@ -19,7 +19,8 @@ class CreateEvenementsTable extends Migration
             $table->mediumText('DescriptionEvent');
             $table->string('villeEvent');
             $table->integer('nbMaxInscrits');
-            $table->date('dateEvent');
+            $table->date('dateDeb');
+            $table->date('dateFin');
             $table->boolean('EvenementPayant');
             $table->string('lienSitedePayment');
             $table->timestamps();

@@ -12,13 +12,13 @@ class CreateUserController extends Controller
 {
     public function createAccount(CreateUserRequest $request){
 
-      $user = new User;
-      $user->nom = $request->input('nom');
-      $user->prenom = $request->input('prenom');
-      $user->email = $request->input('email');
-      $user->password = $request->input('password');
-      $user->dateNaissance = $request->input('datenaissance');
-      $user->save();
+    //  $user = new User;
+    //  $user->nom = $request->input('nom');
+    //  $user->prenom = $request->input('prenom');
+    //  $user->email = $request->input('email');
+    //  $user->password = $request->input('password');
+    //  $user->dateNaissance = $request->input('datenaissance');
+    //  $user->save();
 
       return redirect('/moncompte');
     }

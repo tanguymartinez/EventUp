@@ -37,15 +37,16 @@ class EventController extends Controller
      */
     public function store(CreateEventRequest $request)
     {
-//      $event = new Event;
-  //    $event->TitleEventCE = $request->input('nomEvenement');
-  //    $event->DescriptionEventCE = $request->input('descriptionEvent');
-    //  $event->maxinscCE = $request->input('nbMaxInscrits');
-    //  $event->dateDebEventCE = $request->input('dateDeb');
-    //  $event->dateFinEventCE = $request->input('dateFin');
-    //  $event->EvenementPayant = $request->input('eventpayantCE');
-      //$event->lienSitePayment= $request ->input('sitepaiementCE');
-  //    $event->save();
+      $event = new Event;
+      $event->nomEvenement = $request->input('TitleEventCE');
+      $event->descriptionEvent = $request->input('DescriptionEventCE');
+      $event->nbMaxInscrits = $request->input('maxinscCE');
+      $event->dateDeb = $request->input('dateDebEventCE');
+      $event->dateFin = $request->input('dateFinEventCE');
+      $event->EvenementPayant = $request->input('eventpayantCE');
+      $event->lienSitePayment= $request ->input('sitepaiementCE');
+
+      $event->save();
 
       return redirect('/home');
     }
@@ -58,7 +59,7 @@ class EventController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('showEvent')->with(compact(Event::where('id', $id)));
     }
 
     /**

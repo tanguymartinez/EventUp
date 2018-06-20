@@ -40,6 +40,6 @@ class LoginController extends Controller
 
     public function logout() {
       Auth::logout();
-      return Redirect('/contact');
+      return Redirect('/home');
     }
 }

@@ -42,3 +42,7 @@ Route::get('/creerunevent', function() {
 Route::post('/contact', 'MessagesController@submit');
 
 Route::post('/creercompte', 'CreateUserController@createAccount');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

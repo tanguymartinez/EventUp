@@ -20,6 +20,6 @@ class CreateUserController extends Controller
     //  $user->dateNaissance = $request->input('datenaissance');
     //  $user->save();
 
-      return redirect('/moncompte');
+      return 123;//redirect('/moncompte');
     }
 }

@@ -20,7 +20,7 @@
 
           @if(Auth::check())
           <li>
-            <a href="{{ URL::route('user.logout') }}">DECONNEXION</a>
+            <a href="">DECONNEXION</a>
           </li>
           @else
 

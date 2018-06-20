@@ -1,2 +1,2 @@
 @extends('layouts.app')
-@include('inc.creerEventBtn')
+@include('inc.lblCreateEvent')

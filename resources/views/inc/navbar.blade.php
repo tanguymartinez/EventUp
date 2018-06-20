@@ -18,7 +18,7 @@
           <input class="inputSearch" type="text" placeholder="Search" aria-label="Search">
           <button class="btnSearch" type="submit" >Search</button>
           <li>
-            <a href="/connexion">CONNEXION</a>
+            <a href="/login">CONNEXION</a>
           </li>
       </ul>
     </div>

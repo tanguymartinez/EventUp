@@ -269,20 +269,27 @@ color: #727888;
 h3 {
 	text-align: center;
 }
-.inputCANom {
-	width: 250px;
-}
-.inputCAPrenom{
-	margin-left: 10px;
-	width: 250px;
+.inputCANam {
+	width: 300px;
+	margin-bottom: 10px;
 }
 .inputCAEmail{
 	width: 300px;
+	margin-bottom: 10px;
 }
 .inputMdpCA{
 	width: 300px;
+	margin-bottom: 10px;
 }
 
+.btnConfirmationCA{
+	margin-top: 8px;
+	border-radius: 10px;
+	font-weight: bold;
+	border-style: solid;
+	border-color: grey;
+	font-family:  "Raleway", sans-serif;
+}
 
 /*CREER UN EVENT */
 

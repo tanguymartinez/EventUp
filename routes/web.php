@@ -49,4 +49,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('event', 'EventController');
 
-//Route::post('event/create', 'EventController@store');
+Route::get('logout',['as'=>'users.logout','uses' => 'Auth\LoginController@logout']); 

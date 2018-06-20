@@ -41,10 +41,9 @@ class EventController extends Controller
       $event->nomEvenement = $request->input('TitleEventCE');
       $event->descriptionEvent = $request->input('DescriptionEventCE');
       $event->nbMaxInscrits = $request->input('maxinscCE');
-      $event->dateNaissance = $request->input('datenaissance');
       $event->dateDeb = $request->input('dateDebEventCE');
       $event->dateFin = $request->input('dateFinEventCE');
-    //  $event->EvenementPayant = $request->input('eventpayantCE');
+      $event->EvenementPayant = $request->input('eventpayantCE');
       $event->lienSitePayment= $request ->input('sitepaiementCE');
 
       $event->save();

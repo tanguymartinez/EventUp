@@ -48,3 +48,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('event', 'EventController');
+
+//Route::post('event/create', 'EventController@store');

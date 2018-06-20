@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@include('inc.createEvent')
+@include('inc.lblCreateEvent')
 @section('content')
 
   <div class="contactContent">

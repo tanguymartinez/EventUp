@@ -71,7 +71,8 @@ class EventController extends Controller
      */
     public function edit($id)
     {
-        //
+        $event = Event::find($id);
+        return view('editEvent')->with(compact('event'));
     }
 
     /**
@@ -83,7 +84,19 @@ class EventController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      $event = Event::find($id);
+      $event->nomEvenement = $request->input('TitleEventCE');
+      $event->descriptionEvent = $request->input('DescriptionEventCE');
+      $event->nbMaxInscrits = $request->input('maxinscCE');
+      $event->dateDeb = $request->input('dateDebEventCE');
+      $event->dateFin = $request->input('dateFinEventCE');
+      $event->EvenementPayant = $request->input('eventpayantCE');
+      $event->lienSitePayment= $request ->input('sitepaiementCE');
+
+      $event->save();
+
+      return redirect()->back();
+
     }
 
     /**

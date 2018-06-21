@@ -1,10 +1,13 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
+namespace App\Http\Requests;
+use Illuminate\Foundation\Http\FormRequest;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Auth;
+
 
 class LoginController extends Controller
 {
@@ -41,5 +44,19 @@ class LoginController extends Controller
     public function logout() {
       Auth::logout();
       return Redirect('/home');
+    }
+
+    public function login(LoginRequest $request)
+    {
+
+      $user_data = array(
+        'email' => $request->get('eamil'),
+        'password' => $request->get('password')
+      );
+      if(Auth::attempt($user_data)){
+
+        return redirect('/home');
+      }
+
     }
 }

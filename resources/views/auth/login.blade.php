@@ -5,12 +5,11 @@
 <div class="connexionContent">
     <img src={{ URL::asset('img/logotxt2.png') }} alt="EventUp" class="logoConnexion">
 
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('login') }}">
                         @csrf
 
 
-
-
+                          <!--   <label for="email" class="">{{ __('E-Mail Address') }}</label><br> -->
 
                                 <input  type="email" class="inputEmailConnexion"  placeholder="Email" name="email" value="{{ old('email') }}" required><br>
 

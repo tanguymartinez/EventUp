@@ -24,13 +24,8 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-after{
-	margin-top: 50px;
-}
-
 /*NAV BAR*/
 .nav-top{
-	position: fixed;
 	display: block;
 	background-color: #2C3E50;
 	width: 100%;

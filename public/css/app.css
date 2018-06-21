@@ -24,6 +24,19 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+#container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.container{
+	margin: 20px;
+	display: block;
+	overflow: scroll;
+	border: 1px dashed black;
+}
+
 /*NAV BAR*/
 .nav-top{
 

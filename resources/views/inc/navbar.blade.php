@@ -14,11 +14,7 @@
         </li>
         @if(Auth::check())
           <li>
-            <a href="/moncompte">MON COMPTE</a>
-          </li>
-        @else
-          <li>
-            <a href="/login">MON COMPTE</a>
+            <a href="/account">MON COMPTE</a>
           </li>
         @endif
           <input class="inputSearch" type="text" placeholder="Search" aria-label="Search">

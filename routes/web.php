@@ -49,6 +49,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('event', 'EventController');
 
+
+
 //Route::get('logout',['as'=>'users.logout','uses' => 'Auth\LoginController@logout']);
 
 //Route::post('/login', 'Auth\LoginController@login');

@@ -27,6 +27,7 @@
           @if(Auth::check())
             <li>
               <form method="post" action="{{ URL::route('logout') }}">
+                @csrf
                 <button type="submit">Logout</button>
               </form>
             </li>

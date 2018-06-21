@@ -31,7 +31,7 @@ Route::get('/connexion', function () {
     return view('connexion');
 });
 
-Route::get('/creercompte', function () {
+Route::get('/createAccou', function () {
     return view('creercompte');
 });
 
@@ -49,4 +49,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('event', 'EventController');
 
-Route::get('logout',['as'=>'users.logout','uses' => 'Auth\LoginController@logout']); 
+Route::get('logout',['as'=>'users.logout','uses' => 'Auth\LoginController@logout']);

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<img class"separateur" src="img/separator.png" width="100" height="80">
+
 <div class="createAccountContent">
 
                     <form method="POST" action="{{ route('register') }}">

@@ -41,7 +41,7 @@ body {
 }
 .Menu ul li {
 	display: inline-block;
-	width : 130px;
+	width : 140px;
 	height: 40px;
 	padding-top : 18px;
 	text-align : center;
@@ -161,7 +161,7 @@ align-items : center;
 }
 h5{
 	color :black;
-	font-size: 20px;
+	font-size: 26px;
 	font-family:  "Raleway", sans-serif;
 	margin-left: 15%;
 	margin-top: 40px;
@@ -182,12 +182,12 @@ h5{
 }
 h2{
 	color :black;
-	font-size: 20px;
+	font-size: 25px;
 		font-family:  "Raleway", sans-serif;
 
 }
 p{
-	font-size: 14px;
+	font-size: 20px;
 	font-family : Arial;
 }
 .inputContactEmailNom{
@@ -276,6 +276,7 @@ color: #727888;
 }
 h3 {
 	text-align: center;
+	font-size : 22px;
 }
 .inputCANam {
 	width: 300px;
@@ -298,6 +299,34 @@ h3 {
 	border-color: grey;
 	font-family:  "Raleway", sans-serif;
 }
+
+/*MON COMPTE */
+.contentAccountShow {
+	box-shadow : 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2) ;
+display: block;
+margin-top :25px;
+margin-bottom : 30px;
+padding-bottom : 0px;
+padding-left : 5px;
+padding-right : 5px;
+padding-top : 20px;
+padding-bottom: 20px;
+width: 80%	;
+height: auto;
+text-align: justify;
+text-justify: auto;
+margin-left: auto;
+margin-right: auto;
+color: #727888;
+}
+
+.btnModifAccountMA {
+	font-size : 18px;
+	border-radius: 10px;
+		border-style: solid;
+
+}
+
 
 /*CREER UN EVENT */
 

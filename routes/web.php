@@ -55,4 +55,6 @@ Route::resource('event', 'EventController');
 
 //Route::post('/login', 'Auth\LoginController@login');
 
+//Route::get('/moncompte', 'AccountController@getUser');
+
 Auth::routes();

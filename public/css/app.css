@@ -72,6 +72,17 @@ body {
 	color : white;
 }
 
+.btnLogout{
+	background-color: rgba(255,255,255,0);
+	font-size: 17px;
+	color: white;
+	text-decoration: none;
+  font-weight: bold;
+	border-style: none;
+	font-family: "Raleway", sans-serif;
+
+}
+
 /*FRONT PAGE*/
 
 .frontPage{

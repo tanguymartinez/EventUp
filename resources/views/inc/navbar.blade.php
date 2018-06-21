@@ -27,8 +27,8 @@
           @if(Auth::check())
             <li>
               <form method="post" action="{{ URL::route('logout') }}">
-                @csrf
-                <button type="submit">Logout</button>
+               @csrf
+               <button type="submit" class="btnLogout">DECONNEXION</button>
               </form>
             </li>
           @else

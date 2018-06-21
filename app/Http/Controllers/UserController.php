@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -14,9 +14,9 @@ class UserController extends Controller
     public function update(Request $request){
 
        $user = Auth::user();
-       $user->name = $request->inpute('name');
-       $user->email = $request->inpute('email');
-       $user->password = $request->inpute('password');
+       $user->name = $request->input('name');
+       $user->email = $request->input('email');
+       $user->password = $request->input('password');
 
        $user->save();
 

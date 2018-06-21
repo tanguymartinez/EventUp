@@ -23,17 +23,15 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/moncompte', function () {
-    return view('moncompte');
+Route::get('/account', function () {
+    return view('account');
 });
 
 Route::get('/connexion', function () {
     return view('connexion');
 });
 
-Route::get('/editAccount', function () {
-    return view('editAccount');
-});
+Route::get('/editAccount', 'UserController@show');
 /*
 Route::get('/creercompte', function () {
     return view('creercompte');

@@ -5,13 +5,13 @@
 <div class="createAccountContent">
 
   <form action="/editAccount" method="post">
-      
+
                         @csrf
                       <h3>MODIFIER MON COMPTE</h3><br>
                             <label for="name" class="">{{ __('Name') }}</label><br>
 
 
-                                <input  type="text" class="inputCANam" name="name" value="{{ Auth::user()->name }}" required autofocus><br>
+                                <input  type="text" class="inputCANam" name="name" value="{{ $user->name }}" required autofocus><br>
 
                                 @if ($errors->has('name'))
                                     <span class="invalid-feedback">
@@ -21,7 +21,7 @@
 
                             <label for="email" class="">{{ __('E-Mail Address') }}</label><br>
 
-                                <input  type="email" class="inputCAEmail" name="email" value="{{ Auth::user()->email }}" required><br>
+                                <input  type="email" class="inputCAEmail" name="email" value="{{ $user->email }}" required><br>
 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback">
@@ -31,7 +31,7 @@
 
                             <label for="password" class="">{{ __('Password') }}</label><br>
 
-                                <input type="password" class="inputMdpCA" value="{{ Auth::user()->password }}" name="password" required><br>
+                                <input type="password" class="inputMdpCA" name="password" required><br>
 
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback">
@@ -41,7 +41,7 @@
 
                             <label for="password-confirm" class="">{{ __('Confirm Password') }}</label><br>
 
-                                <input type="password" class="inputMdpCA"  value="{{ Auth::user()->password }}" name="password_confirmation" required><br>
+                                <input type="password" class="inputMdpCA" name="password_confirmation" required><br>
 
                                 <button type="submit" class="btnConfirmationCA">
                                     {{ __('Valider') }}

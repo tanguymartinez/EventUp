@@ -3,7 +3,7 @@
   Créer un Event <button class="plus">+</button>
 </a>
 @else
-<a class="txtCreateEvent" href="/connexion">
+<a class="txtCreateEvent" href="/login">
   Créer un Event <button class="plus">+</button>
 </a>
 @endif

@@ -26,7 +26,9 @@
 
           @if(Auth::check())
             <li>
-              <a href= "{{ URL::route('users.logout') }}">DECONNEXION</a>
+              <form method="post" action="{{ URL::route('logout') }}">
+                <button type="submit">Logout</button>
+              </form>
             </li>
           @else
             <li>

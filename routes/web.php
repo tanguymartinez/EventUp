@@ -30,18 +30,19 @@ Route::get('/moncompte', function () {
 Route::get('/connexion', function () {
     return view('connexion');
 });
-
-Route::get('/createAccou', function () {
+/*
+Route::get('/creercompte', function () {
     return view('creercompte');
 });
 
 Route::get('/creerunevent', function() {
     return view('creerunevent');
 });
+*/
 
 Route::post('/contact', 'MessagesController@submit');
 
-Route::post('/creercompte', 'CreateUserController@createAccount');
+//Route::post('/creercompte', 'CreateUserController@createAccount');
 
 Auth::routes();
 
@@ -49,4 +50,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('event', 'EventController');
 
-Route::get('logout',['as'=>'users.logout','uses' => 'Auth\LoginController@logout']);
+Route::get('logout',['as'=>'users.logout','uses' => 'AuthLoginController@logout']);

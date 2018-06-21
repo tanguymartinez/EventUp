@@ -9,7 +9,8 @@
                         @csrf
 
 
-                          <!--   <label for="email" class="">{{ __('E-Mail Address') }}</label><br> -->
+
+
 
                                 <input  type="email" class="inputEmailConnexion"  placeholder="Email" name="email" value="{{ old('email') }}" required><br>
 

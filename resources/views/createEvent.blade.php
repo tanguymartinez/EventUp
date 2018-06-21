@@ -24,7 +24,7 @@
 
     <label for="inputCEMaxInsc">Nombre maximum d'inscriptions : </label>
     <input class="inputCEMaxInsc" type="text" name="maxinscCE"> <br><br>
-    
+
     <label for="inputCELieuEvent">Lieu de l'événement : </label>
     <input class="inputCELieuEvent" type="text" name="lieueventCE"> <br><br>
 

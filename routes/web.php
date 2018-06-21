@@ -30,6 +30,10 @@ Route::get('/moncompte', function () {
 Route::get('/connexion', function () {
     return view('connexion');
 });
+
+Route::get('/editAccount', function () {
+    return view('editAccount');
+});
 /*
 Route::get('/creercompte', function () {
     return view('creercompte');
@@ -50,6 +54,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('event', 'EventController');
 
 
+Route::post('/editAccount', 'UserController@update');
 
 //Route::get('logout',['as'=>'users.logout','uses' => 'Auth\LoginController@logout']);
 

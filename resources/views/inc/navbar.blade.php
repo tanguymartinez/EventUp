@@ -17,9 +17,11 @@
             <a href="/account">MON COMPTE</a>
           </li>
         @endif
-          <input class="inputSearch" type="text" placeholder="Search" aria-label="Search">
+        <form action="{{ route('search') }}" method="post">
+          @csrf
+          <input class="inputSearch" type="text" placeholder="Search" aria-label="Search" name="title">
           <button class="btnSearch" type="submit" >Search</button>
-
+        </form>
           @if(Auth::check())
             <li>
               <form method="post" action="{{ URL::route('logout') }}">

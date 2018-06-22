@@ -47,6 +47,11 @@ body {
 	box-shadow: 0px 5px 10px #001;
 	z-index: -1;
 }
+
+.Menu form{
+	display: inline-block;
+}
+
 .Menu ul {
 	padding: 0px;
 	margin: 0px ;

@@ -15,6 +15,8 @@ Route::get('/', function () {
     return redirect('home');
 });
 
+Route::post('/search', 'SearchController@search')->name('search');
+
 Route::get('/calendrier', function () {
     return view('calendrier');
 });

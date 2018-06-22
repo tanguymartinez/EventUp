@@ -65,8 +65,8 @@ class EventController extends Controller
      */
     public function show($id)
     {
-        $events = Event::where('idEvent', $id)->get();
-        return view('showEvent')->with(compact('events'));
+        $event = Event::where('idEvent', $id)->first()->get();
+        return view('showEvent')->with(compact('event'));
     }
 
     /**

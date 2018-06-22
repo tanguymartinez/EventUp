@@ -26,8 +26,6 @@ class HomeController extends Controller
     public function index()
     {
         $events = Event::all()->take(10);
-        return view('home')->with([
-          'events' => $events
-        ]);
+        return view('home')->with(compact('events'));
     }
 }

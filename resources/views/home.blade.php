@@ -14,6 +14,7 @@
           <div class="eventAnnonceContent">
             <h1>{{ $event->nomEvenement }}</h1>
             <p>{{ $event->DescriptionEvent }}</p>
+            <a href="{{ route('event.show', $event->idEvent) }}">Afficher</a>
           </div>
         @endforeach
   </div>

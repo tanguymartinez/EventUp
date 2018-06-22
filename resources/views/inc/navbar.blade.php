@@ -16,6 +16,10 @@
           <li>
             <a href="/account">MON COMPTE</a>
           </li>
+        @else
+          <li>
+            <a href="/connexion">MON COMPTE</a>
+          </li>
         @endif
         <form action="{{ route('search') }}" method="post">
           @csrf

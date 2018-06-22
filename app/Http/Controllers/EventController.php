@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\CreateEventRequest;
 use App\Http\Requests;
 use App\Event;
+use App\Ville ;
 
 class EventController extends Controller
 {
@@ -27,7 +28,10 @@ class EventController extends Controller
      */
     public function create()
     {
-        return view('createEvent');
+        $villes = Ville::all();
+        return view('createEvent')->with([
+          'villes' => $villes,
+        ]);
     }
 
     /**
@@ -42,6 +46,7 @@ class EventController extends Controller
       $event->nomEvenement = $request->input('TitleEventCE');
       $event->descriptionEvent = $request->input('DescriptionEventCE');
       $event->nbMaxInscrits = $request->input('maxinscCE');
+      $event->ville_id = $request->input('lieueventCE');
       $event->dateDeb = $request->input('dateDebEventCE');
       $event->dateFin = $request->input('dateFinEventCE');
       $event->EvenementPayant = $request->input('eventpayantCE');

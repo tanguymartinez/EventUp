@@ -27,10 +27,9 @@ class CreateEventRequest extends FormRequest
           'TitleEventCE' => 'required',
           'DescriptionEventCE' => 'required',
           'maxinscCE' => 'required',
+          'lieueventCE' => 'required|exists:villes,idVille',
           'dateDebEventCE' => 'required',
           'dateFinEventCE' => 'required',
-
-
         ];
     }
 }

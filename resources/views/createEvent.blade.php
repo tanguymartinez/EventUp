@@ -2,7 +2,7 @@
 
 @section('content')
 
-  
+
 
 <div class="createEvent">
   <form action={{ route('event.store') }} method="post">
@@ -26,7 +26,11 @@
     <input class="inputCEMaxInsc" type="text" name="maxinscCE"> <br><br>
 
     <label for="inputCELieuEvent">Lieu de l'événement : </label>
-    <input class="inputCELieuEvent" type="text" name="lieueventCE"> <br><br>
+    <select class="inputCELieuEvent" type="text" name="lieueventCE">
+      @foreach($villes as $ville)
+        <option value="{{ $ville->idVille }}">{{ $ville->nomVille }}</option>
+      @endforeach
+    </select><br><br>
 
     <label for="inputCEDateEvent">Date début de l'événement : </label>
     <input class="inputCEDateEvent" type="date" name="dateDebEventCE"><br><br>

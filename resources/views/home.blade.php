@@ -9,25 +9,13 @@
 @include('inc.lblCreateEvent')
 @section('content')
   <div id="content">
-
     <h5>ACTUALITES</h5>
-    <div class="eventAnnonceContent">
-      <h2> Title ......</h2>
-        <p> Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.</p>
-        <button class="btnEnSavoirPlus" type="submit" >En savoir plus</button>
-    </div>
-
-    <div class="eventAnnonceContent">
-      <h2> Title ......</h2>
-        <p> Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.</p>
-        <button class="btnEnSavoirPlus" type="submit" >En savoir plus</button>
-    </div>
-
-    <div class="eventAnnonceContent">
-      <h2> Title ......</h2>
-        <p> Sed fruatur sane hoc solacio atque hanc insignem ignominiam, quoniam uni praeter se inusta sit, putet esse leviorem, dum modo, cuius exemplo se consolatur, eius exitum expectet, praesertim cum in Albucio nec Pisonis libidines nec audacia Gabini fuerit ac tamen hac una plaga conciderit, ignominia senatus.</p>
-        <button class="btnEnSavoirPlus" type="submit" >En savoir plus</button>
-    </div>
+        @foreach($events as $event)
+          <div class="eventAnnonceContent">
+            <h1>{{ $event->nomEvenement }}</h1>
+            <p>{{ $event->DescriptionEvent }}</p>
+          </div>
+        @endforeach
   </div>
 
 @endsection

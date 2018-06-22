@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Event;
+use App\Ville;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $events = Event::all()->take(10);
+        return view('home')->with([
+          'events' => $events
+        ]);
     }
 }

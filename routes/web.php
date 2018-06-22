@@ -51,6 +51,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('event', 'EventController');
 
+Route::resource('ville', 'VilleController');
 
 Route::post('/editAccount', 'UserController@update');
 
